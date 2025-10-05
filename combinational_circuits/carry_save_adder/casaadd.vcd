@@ -1,0 +1,74 @@
+$date
+	Tue Sep 16 21:08:17 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module casaadd_tb $end
+$var wire 4 ! s [3:0] $end
+$var wire 4 " c [3:0] $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 4 % cin [3:0] $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 4 ( cin [3:0] $end
+$var reg 4 ) c [3:0] $end
+$var reg 4 * s [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b1001 "
+b1001 )
+b100 !
+b100 *
+b1000 %
+b1000 (
+b1 $
+b1 '
+b1101 #
+b1101 &
+#20
+b0 "
+b0 )
+b1011 !
+b1011 *
+b1 %
+b1 (
+b1010 $
+b1010 '
+b0 #
+b0 &
+#30
+b11 "
+b11 )
+b110 !
+b110 *
+b111 %
+b111 (
+b10 $
+b10 '
+b11 #
+b11 &
+#40

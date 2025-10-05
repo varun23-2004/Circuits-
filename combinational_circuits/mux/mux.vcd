@@ -1,0 +1,152 @@
+$date
+	Tue Sep 09 11:14:37 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux_tb $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ c $end
+$var reg 1 % d $end
+$var reg 2 & s [1:0] $end
+$scope module dut $end
+$var wire 1 " a $end
+$var wire 1 ' and0 $end
+$var wire 1 ( and1 $end
+$var wire 1 ) and2 $end
+$var wire 1 * and3 $end
+$var wire 1 # b $end
+$var wire 1 $ c $end
+$var wire 1 % d $end
+$var wire 1 + not_s0 $end
+$var wire 1 , not_s1 $end
+$var wire 2 - s [1:0] $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 -
+1,
+1+
+0*
+0)
+0(
+1'
+b0 &
+0%
+1$
+0#
+1"
+1!
+$end
+#5
+0!
+0'
+0+
+b1 &
+b1 -
+#10
+1!
+1)
+1+
+0,
+b10 &
+b10 -
+#15
+0!
+0)
+0+
+b11 &
+b11 -
+#20
+1'
+1+
+1,
+1!
+0*
+b0 &
+b0 -
+1#
+1%
+#25
+0'
+0+
+1(
+b1 &
+b1 -
+#30
+1)
+1!
+1+
+0,
+0(
+b10 &
+b10 -
+#35
+0)
+0+
+1*
+b11 &
+b11 -
+#40
+1+
+1,
+0!
+0*
+b0 &
+b0 -
+0"
+0#
+0$
+0%
+#45
+0+
+b1 &
+b1 -
+#50
+1+
+0,
+b10 &
+b10 -
+#55
+0+
+b11 &
+b11 -
+#60
+1'
+1+
+1,
+1!
+0*
+b0 &
+b0 -
+1"
+1%
+#65
+0!
+0'
+0+
+b1 &
+b1 -
+#70
+1+
+0,
+b10 &
+b10 -
+#75
+1!
+0+
+1*
+b11 &
+b11 -
+#80

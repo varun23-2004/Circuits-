@@ -1,0 +1,49 @@
+$date
+	Tue Oct 07 21:08:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module b2bcd_tb $end
+$var wire 4 ! bcd [3:0] $end
+$var reg 4 " bin [3:0] $end
+$scope module uut $end
+$var wire 4 # bin [3:0] $end
+$var wire 4 $ bcd [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1111 !
+b1111 $
+b1011 "
+b1011 #
+#20
+b111 !
+b111 $
+b111 "
+b111 #
+#30
+b11 !
+b11 $
+b1001 "
+b1001 #
+#40
+b110 !
+b110 $
+b110 "
+b110 #
+#100

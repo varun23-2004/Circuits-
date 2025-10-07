@@ -1,0 +1,59 @@
+$date
+	Tue Oct 07 21:33:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module bcd2exce_tb $end
+$var wire 16 ! exce [15:0] $end
+$var reg 16 " bcd [15:0] $end
+$scope module uut $end
+$var wire 16 # bcd [15:0] $end
+$var wire 16 $ exce [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11 $
+b0 #
+b0 "
+b11 !
+$end
+#10
+b10011 !
+b10011 $
+b10000 "
+b10000 #
+#20
+b101000 !
+b101000 $
+b100101 "
+b100101 #
+#30
+b111100 !
+b111100 $
+b111001 "
+b111001 #
+#40
+b1001010 !
+b1001010 $
+b1000111 "
+b1000111 #
+#50
+b1011011 !
+b1011011 $
+b1011000 "
+b1011000 #
+#60
+b1101100 !
+b1101100 $
+b1101001 "
+b1101001 #
+#80

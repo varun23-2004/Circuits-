@@ -1,0 +1,62 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002125edb9e50 .scope module, "bcd2exce_tb" "bcd2exce_tb" 2 1;
+ .timescale 0 0;
+v000002125eed5490_0 .var "bcd", 15 0;
+v000002125eed5530_0 .net "exce", 15 0, L_000002125eed55d0;  1 drivers
+S_000002125eed5260 .scope module, "uut" "bcd2exce" 2 5, 3 1 0, S_000002125edb9e50;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "bcd";
+    .port_info 1 /OUTPUT 16 "exce";
+L_000002125ef1b848 .functor BUFT 1, C4<0000000000000011>, C4<0>, C4<0>, C4<0>;
+v000002125edb9fe0_0 .net/2u *"_ivl_0", 15 0, L_000002125ef1b848;  1 drivers
+v000002125edb6900_0 .net "bcd", 15 0, v000002125eed5490_0;  1 drivers
+v000002125eed53f0_0 .net "exce", 15 0, L_000002125eed55d0;  alias, 1 drivers
+L_000002125eed55d0 .arith/sum 16, v000002125eed5490_0, L_000002125ef1b848;
+    .scope S_000002125edb9e50;
+T_0 ;
+    %vpi_call 2 8 "$monitor", $time, " bcd=%b | exce=%b", v000002125eed5490_0, v000002125eed5530_0 {0 0 0};
+    %pushi/vec4 0, 0, 16;
+    %store/vec4 v000002125eed5490_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 16, 0, 16;
+    %store/vec4 v000002125eed5490_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 37, 0, 16;
+    %store/vec4 v000002125eed5490_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 57, 0, 16;
+    %store/vec4 v000002125eed5490_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 71, 0, 16;
+    %store/vec4 v000002125eed5490_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 88, 0, 16;
+    %store/vec4 v000002125eed5490_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 105, 0, 16;
+    %store/vec4 v000002125eed5490_0, 0, 16;
+    %delay 10, 0;
+    %delay 10, 0;
+    %vpi_call 2 16 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000002125edb9e50;
+T_1 ;
+    %vpi_call 2 20 "$dumpfile", "bcd2exce.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002125edb9e50 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "bcd2exce_tb.v";
+    "bcd2exce.v";
